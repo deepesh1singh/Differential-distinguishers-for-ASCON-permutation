@@ -1,0 +1,30 @@
+Differential Distinguishers for ASCON Permutation — Deep Learning Experiments
+
+This repository contains a full set of experiments for training machine-learning-based differential distinguishers targeting the ASCON permutation, a lightweight cryptographic primitive used in authenticated encryption and hashing.
+Each experiment is organized by round-reduced versions of ASCON (from 1 to 5 rounds) and implemented via Jupyter notebooks.
+
+The project uses CNN and LSTM neural-network models to classify differential traces, evaluate distinguisher accuracy, and explore the behavior of neural models under increasing ASCON round complexity.
+
+Differential-distinguishers-for-ASCON-permutation-main/
+│
+├── ROUND_1.ipynb   # CNN & LSTM distinguishers for 1-round ASCON
+├── ROUND_2.ipynb   # CNN & LSTM experiments for 2-round ASCON
+├── ROUND_3.ipynb   # Neural distinguishers for 3 rounds
+├── ROUND_4.ipynb   # Neural distinguishers for 4 rounds
+├── ROUND_5.ipynb   # Neural distinguishers for 5 rounds
+│
+├── IMAGE/
+│   ├── cnn_training_results.png
+│   ├── cnn_training_results_2.png
+│   ├── cnn_training_results_3.png
+│   ├── cnn_training_results_4.png
+│   ├── cnn_training_results_5.png
+│   │
+│   ├── lstm_training_results.png
+│   ├── lstm_training_results_2.png
+│   ├── lstm_training_results_3.png
+│   ├── lstm_training_results_4.png
+│   ├── lstm_training_results_5.png
+│
+└── (No additional Python modules included)
+
